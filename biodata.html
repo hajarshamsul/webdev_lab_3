@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Biodata | UTHM Student Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 40px 10%;
+      color: #333;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: inline-block;
+      background: #ff7b00;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .back-btn i {
+      margin-right: 6px;
+    }
+
+    .back-btn:hover {
+      background: #ff5500;
+      transform: translateY(-2px);
+    }
+
+    /* Animated Title */
+    h1 {
+      text-align: center;
+      color: #ff7b00;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      opacity: 0;
+      animation: fadeSlide 1.2s forwards ease-out;
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #e6e6e6;
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th {
+      background: #fff6ec;
+      font-weight: 600;
+      color: #d66400;
+    }
+
+    tr:hover {
+      background: #fff9f1;
+      transition: 0.2s;
+    }
+
+    img {
+      width: 160px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    a {
+      color: #ff7b00;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ff5500;
+    }
+
+    ul li::before, ol li::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 8px;
+      color: #ff7b00;
+    }
+
+    /* Icon Bullets */
+    ul li::before { content: "\f058"; } /* check icon */
+    ol li::before { content: "\f0a4"; } /* star icon */
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body { padding: 20px; }
+      table { font-size: 14px; }
+      img { width: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back Button -->
+  <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+  <!-- Animated Title -->
+  <h1>My Personal Profile</h1>
+
+  <table>
+    <tr>
+      <th><i class="fa-solid fa-id-card"></i> Name</th>
+      <td>SITI HAJAR BINTI SHAMSULBACHRY</td>
+      <td rowspan="4" style="text-align:center;"><img src="images/IMG_5636.JPG" alt="My Photo"></td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-cake-candles"></i> Date of Birth</th>
+      <td>07 APRIL 2004</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-mosque"></i> Religion</th>
+      <td>Islam</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-people-group"></i> Race</th>
+      <td>Malay</td>
+    </tr>
+
+    <tr>
+      <th rowspan="4"><i class="fa-solid fa-map-location-dot"></i> Address</th>
+      <th>Street</th>
+      <td>LORONG SAHABAT</td>
+    </tr>
+    <tr>
+      <th>Town</th>
+      <td>TAWAU</td>
+    </tr>
+    <tr>
+      <th>District</th>
+      <td>TAWAU</td>
+    </tr>
+    <tr>
+      <th>State</th>
+      <td>SABAH</td>
+    </tr>
+
+    <tr>
+      <th rowspan="3"><i class="fa-solid fa-phone"></i> Contact</th>
+      <th>Mobile Phone</th>
+      <td>+60 11-3587-3736</td>
+    </tr>
+    <tr>
+      <th>Social Media</th>
+      <td><a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en" target="_blank"><i class="fa-solid fa-globe"></i> h@jarShamsul</a></td>
+    </tr>
+    <tr>
+      <th>Website</th>
+      <td><a href="https://github.com/hajarshamsul" target="_blank"><i class="fa-brands fa-github"></i> Personal GitHub</a></td>
+    </tr>
+
+    <tr>
+      <th><i class="fa-solid fa-graduation-cap"></i> Course & Institution</th>
+      <td colspan="2">Bachelor of Computer Science (Software Engineering), Universiti Tun Hussein Onn Malaysia (UTHM)</td>
+    </tr>
+
+    <tr>
+      <th><i class="fa-solid fa-code"></i> Programming Skills</th>
+      <td colspan="2">
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java & Python</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <th><i class="fa-solid fa-heart"></i> Hobbies</th>
+      <td colspan="2">Drawing and Singing</td>
+    </tr>
+
+    <tr>
+      <th><i class="fa-solid fa-star"></i> 2025 Wishlist</th>
+      <td colspan="2">
+        <ol>
+          <li>Graduate with First Class Honours</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* ======= GLOBAL ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff6600, #ff9966);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #222;
+}
+
+/* ======= NAVBAR (Glass) ======= */
+.nav-wrap {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffe6d1;
+}
+
+/* ======= LAYOUT ======= */
+.content {
+    display: flex;
+    flex: 1;
+    width: 90%;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+/* ======= SIDEBAR ======= */
+.side_bar {
+    width: 22%;
+    padding: 20px;
+    background: #ff6600;
+    border-radius: 15px;
+    color: white;
+}
+
+.side_bar h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.side_bar ul {
+    list-style: none;
+}
+
+.side_bar ul li {
+    margin-bottom: 10px;
+}
+
+.side_bar ul li a {
+    color: #cce0ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.side_bar ul li a:hover {
+    color: white;
+}
+
+/* ======= BODY AREA ======= */
+.body_area {
+    width: 78%;
+}
+
+/* ======= HERO (Small Banner) ======= */
+.hero {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: white;
+    color: #ff6600;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #fff2e6;
+}
+
+/* ======= CARDS ======= */
+.cards-section {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* ======= FOOTER ======= */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    color: white;
+    opacity: 0.9;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+    .side_bar, .body_area {
+        width: 100%;
+    }
+    .cards-section {
+        flex-direction: column;
+    }
+}
+
